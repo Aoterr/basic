@@ -1,5 +1,6 @@
-*.settings
+.idea/*
+app4tv-platform.iml
+.gitignore
 .classpath
 .project
-/bin
-/
+.settings/*

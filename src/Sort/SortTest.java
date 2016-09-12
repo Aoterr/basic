@@ -30,7 +30,6 @@ public class SortTest {
 				return collator.getCollationKey(o1).compareTo(
 						collator.getCollationKey(o2));
 			}
-			
 		};
 		Collections.sort(list, comparator);
 		System.out.println(list);
