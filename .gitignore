@@ -5,3 +5,5 @@ app4tv-platform.iml
 .project
 .settings
 *.class
+
+/bin
