@@ -1,7 +1,6 @@
 package innerclass;
 
 interface Incrementable {
-	
 	void increment();
 }
 
