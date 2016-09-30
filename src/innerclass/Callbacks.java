@@ -7,9 +7,9 @@ interface Incrementable {
 
 class Callee1 implements Incrementable {
 	private int i = 0;
-
 	public void increment() {
 		i++;
+		
 		System.out.println(i);
 	}
 }
@@ -33,7 +33,7 @@ class Callee2 extends MyIncrement {
 		System.out.println(i);
 	}
 	
-	private class Closure implements Incrementable // ÄÚ²¿Àà
+	private class Closure implements Incrementable // ï¿½Ú²ï¿½ï¿½ï¿½
 	{
 		public void increment() {
 			Callee2.this.increment();
@@ -41,7 +41,7 @@ class Callee2 extends MyIncrement {
 	}
 
 	Incrementable getCallbackReference() {
-		return new Closure(); // ÐÂ½¨ÄÚ²¿Àà
+		return new Closure(); // ï¿½Â½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 	}
 }
 
@@ -53,7 +53,7 @@ class Caller {
 	}
 
 	void go() {
-		callbackRefference.increment();// µ÷ÓÃincrement()·½·¨
+		callbackRefference.increment();// ï¿½ï¿½ï¿½ï¿½increment()ï¿½ï¿½ï¿½ï¿½
 	}
 }
 
@@ -63,7 +63,7 @@ public class Callbacks {
 		Callee2 c2 = new Callee2();
 		MyIncrement.f(c2);
 		Caller caller1 = new Caller(c1);
-		Caller caller2 = new Caller(c2.getCallbackReference());// ½«ÄÚ²¿ÀàÖÐµÄClosure¸³¸øCaller
+		Caller caller2 = new Caller(c2.getCallbackReference());// ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ðµï¿½Closureï¿½ï¿½ï¿½ï¿½Caller
 		caller1.go();
 		caller1.go();
 		caller2.go();
