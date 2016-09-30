@@ -1,10 +1,10 @@
+bin
+
 .idea/*
-app4tv-platform.iml
 .gitignore
 .classpath
 .project
 .settings
 *.class
 
-/bin
-/bin
+

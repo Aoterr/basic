@@ -6,7 +6,6 @@ interface Incrementable {
 }
 
 class Callee1 implements Incrementable {
-	
 	private int i = 0;
 
 	public void increment() {
