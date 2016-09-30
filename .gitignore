@@ -3,4 +3,5 @@ app4tv-platform.iml
 .gitignore
 .classpath
 .project
-.settings/*
+.settings
+*.class
