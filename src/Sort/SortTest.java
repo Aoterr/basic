@@ -18,6 +18,7 @@ public class SortTest {
 		list.add("xxx");
 		list.add("xxy");
 		list.add("432");
+		list.add("123");
 		return list;
 	}
 
